@@ -5,8 +5,8 @@
     <v-header @changeFlag="changeFlag" @openActivity="openActivity" @move="move" ref="header"></v-header>
     <v-navbar ref="navbar"></v-navbar>
     <div :class='{bg:flag==true}'></div>
-    <v-baseBox ref="baseBox" :style="{'display':flag ? 'block':'none'}" @closeBox="closeBox()"></v-baseBox>
-    <v-activityBox ref="activityBox" @openActivity="openActivity" :style="{'display':flagActivity ? 'block':'none'}"></v-activityBox>
+    <v-baseBox ref="baseBox" v-show="flag" @closeBox="closeBox()"></v-baseBox>
+    <v-activityBox ref="activityBox" @openActivity="openActivity" v-show="flagActivity"></v-activityBox>
   </div>
 </template>
 
@@ -104,7 +104,7 @@
         let heightVal = headerHeight + navbarHeight - searchHeight;
         if(scroll<0){
           //上滑
-          if(0 <= scrollTop <= 100){
+          if(0 <= scrollTop && scrollTop <= 100){
             //调节icon和搜索的透明度
             this.$refs.headerNavbar.changeOpacity(scrollTop);
             this.$refs.headerSearch.changeOpacity(scrollTop);

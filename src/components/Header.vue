@@ -10,7 +10,7 @@
       <div class="content_disc">
         <ul>
           <li>评价4.5</li>
-          <li style="border-left: 1px solid lightgray;border-right: 1px solid lightgray">月售5400</li>
+          <li class="content_disc-li">月售5400</li>
           <li>蜂鸟快送约40分钟</li>
         </ul>
       </div>
@@ -18,9 +18,9 @@
         <span>4.4</span>折起抵用券&nbsp;&nbsp;&nbsp;&nbsp;购买
       </div>
       <div class="activity">
-        <ul style="height: 0.533rem">
+        <ul class="content_disc-ul">
           <li>27减17</li>
-          <li style="margin: 0 0.1rem">27减17</li>
+          <li class="content_disc-lis">27减17</li>
           <li>27减17</li>
           <li class="activityMsg">
               <span @click="openActivity">3个优惠<i class="el-icon-arrow-down"></i></span>
@@ -134,6 +134,16 @@
     padding: 0 0.3rem;
     color: #5e5e5e;
     font-size: 0.3rem;
+  }
+  .content_disc-ul{
+    height: 0.533rem;
+  }
+  .content_disc-li{
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray
+  }
+  .content_disc-lis{
+    margin: 0 0.1rem;
   }
   .header_card{
     width: 4.5rem;

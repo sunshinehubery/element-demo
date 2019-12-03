@@ -4,7 +4,7 @@
 			<ul>
 				<li>
 					<h1>优惠</h1>
-					<ul style="padding: 0;">
+					<ul class="activityContent-ul">
 						<li>
 							<p><span>满减</span>满27减15，满49减20，满100减50</p>
 						</li>
@@ -12,7 +12,7 @@
 								<p><span>津贴</span>满26可使用津贴6元</p>
 						</li>
 						<li>
-								<p><span style="color:#d5bea5">会员</span>超级会员领6元无门槛</p>
+								<p><span class="activityContent-span">会员</span>超级会员领6元无门槛</p>
 						</li>
 						<li>
 								<p><span>配送</span>配送费立减3元</p>
@@ -27,11 +27,11 @@
 				</li>
 				<li>
 					<h1>服务</h1>
-					<p><span style="border: 1px solid #e2e2e2;color: #828282;">食安全</span>该食品已由国泰保险承担，食品安全有保障</p>
+					<p><span class="activityContent-spans">食安全</span>该食品已由国泰保险承担，食品安全有保障</p>
 				</li>
 				<li>
-						<h1>公告</h1>
-						<p style="width: 670px;">该食品已由国泰保险承担，食品安全有保障。有一大波福利正在赶来，如果有什么安全问题，请及时联系我们.该食品已由国泰保险承担，食品安全有保障。有一大波福利正在赶来，如果有什么安全问题，请及时联系我们:</p>
+					<h1>公告</h1>
+					<p class="activityContent-p">该食品已由国泰保险承担，食品安全有保障。有一大波福利正在赶来，如果有什么安全问题，请及时联系我们.该食品已由国泰保险承担，食品安全有保障。有一大波福利正在赶来，如果有什么安全问题，请及时联系我们:</p>
 				</li>
 			</ul>
 		</div>
@@ -79,6 +79,19 @@ export default {
     bottom: 0rem;
     background: #fff;
   }
+  .activityContent-ul{
+	  padding: 0;
+  }
+	.activityContent-span{
+		color:#d5bea5
+	}
+	.activityContent-spans{
+		border: 1px solid #e2e2e2;
+		color: #828282;
+	}
+	.activityContent-p{
+		width:670px;
+	}
   .el-icon-arrow-up{
     position: relative;
     left: 325px;

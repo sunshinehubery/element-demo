@@ -2,7 +2,7 @@
   <div class="baseBox" id="baseBox">
     <div class="baseBox_title"><span>抵用券</span></div>
     <div class="el-icon-close close" @click="closeBox()"></div>
-    <ul style="padding: 20px;">
+    <ul class="baseBox-ul">
       <li class="case">
         <ul>
           <li class="caseContent1">
@@ -80,6 +80,9 @@
     font-size: 0.48rem;
     font-weight: bold;
     margin: 0.4rem auto 0;
+  }
+  .baseBox-ul{
+    padding: 20px;
   }
   .close{
     font-size: 0.8rem;
