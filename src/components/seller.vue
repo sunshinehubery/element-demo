@@ -48,8 +48,8 @@
 <script>
 export default {
   name: "seller",
-  //举报
   methods: {
+    // 举报事件
     tipSeller(){
       this.$message.success("已举报成功");
     },

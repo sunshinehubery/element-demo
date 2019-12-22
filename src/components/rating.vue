@@ -22,7 +22,7 @@
           <span>包装</span>
           <p>4.6</p>
         </li>
-        <li class="li2" style="border-left: 1px solid #828282;">
+        <li class="li2 onlyStyle">
           <span>配送</span>
           <p>4.7</p>
         </li>
@@ -32,7 +32,7 @@
       <ul>
         <li>
           <ul style="height: 75px;">
-            <li style="background-color: #2295ff;color: #fff;">
+            <li class="first_li">
               <span>全部&nbsp;&nbsp;&nbsp;7211</span>
             </li>
             <li>
@@ -41,28 +41,28 @@
             <li>
               <span>好评&nbsp;&nbsp;&nbsp;711</span>
             </li>
-            <li style="background-color: #f5f5f5">
+            <li class="last_li">
               <span>差评&nbsp;&nbsp;&nbsp;211</span>
             </li>
           </ul>
         </li>
         <li>
-          <ul style="height: 75px;margin-top: 20px;">
+          <ul class="evaluation_ul">
               <li>
                 <span>有图&nbsp;&nbsp;&nbsp;1016</span>
               </li>
               <li>
                 <span>味道好&nbsp;&nbsp;&nbsp;711</span>
               </li>
-              <li style="background-color: #f5f5f5">
+              <li class="evaluation_li">
                 <span>不好吃&nbsp;&nbsp;&nbsp;211</span>
               </li>
           </ul>
         </li>
       </ul>
-      <div style="margin-left: 25px;">
+      <div class="evaluation_div">
         <i class="el-icon-success" @click="flag = !flag" :class="{'grayColor': !flag}"></i>
-        <p style="height: 50px;line-height: 55px;">只看有内容的评价</p>
+        <p class="evaluation_p">只看有内容的评价</p>
       </div>
     </div>
     <div class="comment">
@@ -248,6 +248,30 @@
   }
   .li2{
     width: 130px;
+  }
+  .onlyStyle{
+    border-left: 1px solid #828282;
+  }
+  .first_li{
+    background-color: #2295ff;
+    color: #fff;
+  }
+  .last_li{
+    background-color: #f5f5f5
+  }
+  .evaluation_ul{
+    height: 75px;
+    margin-top: 20px;
+  }
+  .evaluation_li{
+    background-color: #f5f5f5
+  }
+  .evaluation_div{
+    margin-left: 25px;
+  }
+  .evaluation_p{
+    height: 50px;
+    line-height: 55px;
   }
   .el-icon-success{
     font-size: 50px;

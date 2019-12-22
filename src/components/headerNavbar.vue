@@ -1,9 +1,9 @@
 <template>
 	<div class="navbar" id="navbar">
-		<i class="el-icon-back" style="margin-left: 0.4rem"></i>
-		<i class="el-icon-search" style="margin-left: 5.333rem"></i>
-		<i class="el-icon-share" style="margin-left: 0.6rem"></i>
-		<i class="el-icon-view" style="margin-left: 0.6rem"></i>
+		<i class="el-icon-back"></i>
+		<i class="el-icon-search"></i>
+		<i class="el-icon-share"></i>
+		<i class="el-icon-view"></i>
 	</div>
 </template>
 <script>
@@ -37,4 +37,16 @@
     color: #fff;
     margin-top: 0.7rem;
   }
+	.el-icon-back{
+		margin-left: 0.4rem
+	}
+	.el-icon-search{
+		margin-left: 5.333rem
+	}
+	.el-icon-share{
+		margin-left: 0.6rem
+	}
+	.el-icon-view{
+		margin-left: 0.6rem
+	}
 </style>
