@@ -11,7 +11,7 @@
             <img :src=food.url>
             <p>{{food.name}}</p>
             <span>月售{{food.sales}}</span>
-            <span style="font-size: 0.6rem;color: #fe664c;display: block">￥{{food.price}}</span>
+            <span class="recommended_food_span">￥{{food.price}}</span>
           </li>
         </ul>
       </div>
@@ -21,7 +21,7 @@
       <div class="menu-wrapper" ref="menuWrapper">
         <ul>
           <li v-for="(item,index) in goods" class="menu-item"
-            ::key="index"
+            :key="index"
             :class="{'current':currentIndex == index}"
             @click="selectMenu(index,$event)">
             {{item.type}}
@@ -41,8 +41,8 @@
                     <p class="food_sale">月售{{food.sales}}&nbsp;&nbsp;&nbsp;&nbsp;好评率{{food.highPraise}}</p>
                     <p class="food_price">￥{{food.price}}</p>
                     <button class="addFood" @click="addFood(index,indx)">+</button>
-                    <p class="food_number" :style="{'display' : (food.isSelected > 0 ? 'block':'none')}">{{food.isSelected}}</p>
-                    <button class="deleteFood" :style="{'display' : (food.isSelected > 0 ? 'block':'none')}" @click="deleteFood(index,indx)">-</button>
+                    <p class="food_number" v-show="food.isSelected > 0">{{food.isSelected}}</p>
+                    <button class="deleteFood" v-show="food.isSelected > 0" @click="deleteFood(index,indx)">-</button>
                   </ul>
               </li>
             </ul>
@@ -265,7 +265,7 @@
     margin: 0 auto;
   }
   .recommended_title{
-    font-size: 0.5rem;
+    font-size: 0.35rem;
     padding: 0.133rem 0;
   }
   .recommended_content{
@@ -285,7 +285,7 @@
     height: 4rem;
   }
   .recommended_food > li > p{
-    font-size: 0.4rem;
+    font-size: 0.35rem;
     position: relative;
     top: 0.267rem;
     color: black;
@@ -295,6 +295,11 @@
     position: relative;
     top: 0.267rem;
     color: #c9c9c9;
+  }
+  .recommended_food_span{
+    font-size: 0.6rem;
+    color: #fe664c;
+    display: block;
   }
   .menu{
     width: 9.333333rem;
@@ -353,14 +358,14 @@
     color: #b7bbbf;
   }
   .food_name{
-    font-size: .4rem!important;
+    font-size: .35rem!important;
     color: #000!important;
   }
   .food_price{
     width: 0.6rem;
     height: 0.6rem;
     color: #ff664e!important;
-    font-size: 0.6rem!important;
+    font-size: 0.5rem!important;
   }
   .addFood{
     width: 0.8rem;
@@ -388,8 +393,8 @@
     line-height: 0.5rem;
     color: #fff;
     position: relative;
-    top: -2.18rem;
-    left:0.2rem
+    top: -2.25rem;
+    left:1.8rem
   }
   .food_number{
     width:0.6rem;

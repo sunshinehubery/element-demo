@@ -42,14 +42,16 @@
   .el-icon-back{
     width: 1rem;
     float: left;
-    font-size: 1rem;
+    font-size: 36px;
     margin-right: 0.5rem;
+    margin-top: 20px;
   }
   .el-icon-search{
     width: 1rem;
     float: left;
-    font-size: 1rem;
+    font-size: 36px;
     margin-left: 0.5rem;
+    margin-top: 20px;
   }
   .searchInput input{
     float: left;

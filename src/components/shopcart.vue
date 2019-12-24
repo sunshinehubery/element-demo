@@ -16,8 +16,8 @@
 			<div class="cart_right">
 				<h2 class="cart_price" :class="{'count':countCaseOfParent > 0}">￥{{countPriceOfParent}}</h2>
 				<span class="distribution_price">另需配送费4元</span>
-				<h2 class="settlement1" :style="{'display' : (sendingPriceOfParent > 0 ? 'block':'none')}">差￥{{sendingPriceOfParent}}元起送</h2>
-				<button class="settlement2" :style="{'display' : (sendingPriceOfParent == 0 ? 'block':'none')}" @click="pay()">去结算</button>
+				<h2 class="settlement1" v-show="sendingPriceOfParent > 0">差￥{{sendingPriceOfParent}}元起送</h2>
+				<button class="settlement2" v-show="sendingPriceOfParent == 0" @click="pay()">去结算</button>
 			</div>
 		</div>
 	</div>

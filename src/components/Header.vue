@@ -121,7 +121,7 @@
   .content_title{
     width: 9.333rem;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-weight: bold;
     margin-top: 1rem;
   }
@@ -133,7 +133,7 @@
   .content_disc > ul > li{
     padding: 0 0.3rem;
     color: #5e5e5e;
-    font-size: 0.3rem;
+    font-size: 0.2rem;
   }
   .content_disc-ul{
     height: 0.533rem;
@@ -155,7 +155,7 @@
     line-height: 0.667rem;
     color: #fff;
     letter-spacing: 0.027rem;
-    font-size: 0.35rem;
+    font-size: 0.3rem;
   }
   .activity{
     width: 8rem;
